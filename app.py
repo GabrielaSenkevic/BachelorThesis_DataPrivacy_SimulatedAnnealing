@@ -413,7 +413,7 @@ def mimic_dataset_overview():
 ######################################START OF ADULT CENSUS DATASET OVERVIEW######################################
 def adult_census_datset_overview():
 
-    def calculate_suppression_fraction(df, k, t, test_solution):
+    def calculate_suppression_fraction(df, k, test_solution):
         # Group the dataset by the quasi-identifiers
         grouped = df.groupby(test_solution)
         suppressed_indices = []
